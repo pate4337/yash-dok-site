@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+    <label class="btn btn-primary" for="btn-check-2">Step 1</label>
+  </div>
+  
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="firstName" class="form-label">First Name</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+          <input type="text" class="form-control" id="firstName" name="firstName" placeholder="John" required>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="lastName" class="form-label">Last Name</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+          <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Doe" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+        <input type="email" class="form-control" id="email" name="email" placeholder="john.doe@example.com" required>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="phoneNumber" class="form-label">Phone Number</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#optionalGroup" role="button" aria-expanded="false" aria-controls="optionalGroup">
+        Step 2 <em>optional</em>
+      </a>
+    </div>
+    
+    <div class="collapse" id="optionalGroup">
+      <div class="mt-3">
+        <label for="bookingDateTime" class="form-label">Preferred Booking Date and Time</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-calendar-event-fill"></i></span>
+          <input type="datetime-local" class="form-control" id="bookingDateTime" name="bookingDateTime" min="{{ now.Format "2006-01-02T15:04" }}">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="location" class="form-label">Address</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
+          <input type="text" class="form-control" id="location" name="location" placeholder="123 Main St, New York, NY 10001">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="lockboxPin" class="form-label">Lockbox PIN</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+          <input type="text" class="form-control" id="lockboxPin" name="lockboxPin" placeholder="1234">
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>

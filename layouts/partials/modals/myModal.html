@@ -1,0 +1,30 @@
+<!-- Modal -->
+<div class="modal-content modal-styling">
+  <div
+    class="modal fade"
+    id="myModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myModal"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          {{ partial "form/lead" . }}
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-beige"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

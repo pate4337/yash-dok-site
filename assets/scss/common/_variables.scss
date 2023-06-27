@@ -15,6 +15,8 @@ $black:    #000;
 $yellow:   #ffe000;
 $black:    #1d2d35;
 $beige:    #fbf7f0;
+$secondary: #d32e9d;
+$limebg:#F4F8F2;
 
 // $red:      #e55235;
 $purple:   #5d2f86;
@@ -24,7 +26,7 @@ $blue-300: #8ed6fb;
 $pink-100: #fcfaff;
 $pink-500: #d32e9d;
 
-$primary: $purple;
+$primary: $yellow;
 
 $color-btn-bg: $pink-500;
 $color-btn-border: darken($pink-500, 5%);
@@ -63,8 +65,8 @@ $navbar-light-toggler-icon-bg: none;
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white;
-$body-color:                $black;
+$body-bg:                   $gray-600;
+$body-color:                $beige;
 
 // Links
 //
@@ -188,3 +190,21 @@ $dropdown-config: (
 );
 
 $input-btn-focus-width:       0;
+
+
+// Modals
+$modal-inner-padding:               $spacer;
+
+$modal-footer-margin-between:       .5rem;
+
+$modal-dialog-margin:               .5rem;
+$modal-dialog-margin-y-sm-up:       1.75rem;
+
+$modal-content-color:               $black;
+$modal-content-bg:                  $gray-400;
+$modal-content-border-color:        rgba($black, .2);
+
+
+// forms
+// input placeholder text color
+$input-placeholder-color:           $beige;
